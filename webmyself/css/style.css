@@ -1,0 +1,381 @@
+@import url("fonts/Dosis/style.css");
+@import url("fonts/11-TH-Baijam/style.css");
+body {
+    font-family: 'Dosis', 'THBaijam';
+    margin: 0;
+    /* background-color:#47668f; */
+    background-image: url("../img/001.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: relative;
+    top: 0;
+    color: rgb(94, 92, 92);
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar li {
+    font-size: 14pt;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(94, 92, 92);
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar img {
+    width: 10%;
+    padding: 0 20px;
+    position: absolute;
+    left: 15%;
+}
+
+.intro img {
+    width: 30%;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.mySlides {
+    display: none
+}
+
+.mySlides img {
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: auto;
+    padding: 16px;
+    margin-top: 50px;
+    color: #ffcb08 !important;
+    font-size: 32px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    color: #898989 !important;
+}
+
+.prev {
+    left: 51%;
+    border-radius: 3px 0 0 3px;
+}
+
+.slideshow-container {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+}
+
+.basic {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    text-align: center;
+    color: #ddd;
+}
+
+.basic p {
+    font-size: 45px;
+    margin: 10px;
+}
+
+.basic span {
+    font-size: 20px;
+}
+
+.slide img {
+    width: 70px;
+    cursor: pointer;
+}
+
+.slide {
+    width: 70px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    transform: translateX(-50%);
+    left: 47%;
+    font-size: 0;
+}
+
+.slide {
+    -webkit-animation: slideAni .6s ease-in infinite;
+    animation: slideAni .6s ease-in infinite;
+    transition: all 3s ease-in-out;
+}
+
+@keyframes slideAni {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20%);
+    }
+}
+
+.section2 {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 250px;
+    background-color: #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section2 p {
+    font-size: 45px;
+    color: rgb(63, 62, 62);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.section2 h1, h3 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.section2 hr {
+    border: rgb(138, 137, 137) solid 1px;
+    width: 500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section2 img {
+    width: 20%;
+    /* float: left; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.edu p {
+    font-size: 32px;
+    text-align: center;
+    padding: 0;
+}
+
+.edu img {
+    width: 80%;
+}
+
+.works img {
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.works span {
+    display: block;
+    font-size: 26px;
+    text-align: center;
+    margin: 10px;
+}
+
+.footer {
+    background-color: #fff;
+    color: rgb(117, 114, 114);
+}
+
+.foot {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1366px) {
+    .navbar img {
+        width: 15%;
+    }
+    .slideshow-container {
+        right: 8%;
+    }
+    .prev {
+        left: 48%;
+    }
+    .next {
+        right: 5%;
+    }
+    .basic {
+        right: 12%;
+    }
+    .slide {
+        bottom: 100px;
+    }
+    .section2 {
+        margin-top: 350px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar img {
+        width: 20%;
+        position: static;
+    }
+    .intro img {
+        margin-left: 10%;
+    }
+    .slideshow-container {
+        top: 15%;
+        right: 15%;
+    }
+    .mySlides img {
+        margin-left: 0;
+        width: 180px;
+    }
+    .prev {
+        left: 41%;
+    }
+    .prev, .next {
+        top: 20%;
+    }
+    .basic {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 5%;
+    }
+    .slide {
+        bottom: unset;
+    }
+    .foot {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slideshow-container {
+        right: 10%;
+    }
+    .mySlides img {
+        width: 150px;
+    }
+    .section2 {
+        margin-top: 150px;
+    }
+    .section2 hr {
+        width: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    .navbar {
+        height: 100px;
+    }
+    .navbar img {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar ul {
+        position: static;
+        padding: 0;
+    }
+    .intro img {
+        width: 70%;
+        margin-left: 15%;
+    }
+    .slideshow-container {
+        position: static;
+    }
+    .mySlides img {
+        width: 150px;
+        margin-left: 8%;
+    }
+    .prev {
+        left: 0;
+    }
+    .prev ,.next {
+        top: 65%;
+        right: 0;
+    }
+    .basic p {
+        font-size: 25px;
+    }
+    .slide img {
+        width: 50px;
+    }
+    .section2 h1, h3 {
+        font-size: 30px;
+    }
+    .section2 hr {
+        width: 150px;
+    }
+    .edu p {
+        font-size: 22px;
+    }
+    .works span {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .navbar {
+        height: 100px;
+    }
+    .navbar img {
+        width: 50%;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .navbar ul {
+        position: static;
+        padding: 0;
+    }
+    .navbar li {
+        margin: 0 10px;
+    }
+    .intro img {
+        width: 60%;
+    }
+    .mySlides img {
+        width: 150px;
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .mySlides img {
+        width: 120px;
+        margin-left: 5%;
+    }
+    .navbar li {
+        font-size: 12pt;
+    }
+
+}
